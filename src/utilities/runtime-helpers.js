@@ -1,5 +1,4 @@
 import React from 'react';
-
 function useHandleStreamResponse({
   onChunk,
   onFinish
@@ -93,5 +92,6 @@ function useUpload() {
 
 export {
   useHandleStreamResponse,
-  useUpload,
-}
+  useUpload
+};
+
