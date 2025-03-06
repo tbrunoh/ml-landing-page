@@ -1,12 +1,15 @@
 "use client";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function MainComponent() {
   const [isVisible, setIsVisible] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setIsVisible(true);
+    // Check if we are in a browser environment
+    if (typeof window !== 'undefined') {
+      setIsVisible(true);
+    }
   }, []);
 
   return (
