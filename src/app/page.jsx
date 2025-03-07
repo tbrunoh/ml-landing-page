@@ -11,20 +11,30 @@ function MainComponent() {
       setIsVisible(true);
     }
   }, []);
-
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <header className="py-12 text-center">
-          <h1 className="mb-4 text-5xl md:text-6xl font-bold text-gray-900 font-playfair">
-            Melanin Luxe AI
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 font-inter max-w-3xl mx-auto mb-8">
-            Your Personalized Beauty Assistant for African Skin
-          </p>
-          <button className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
-            Start Your Beauty Journey
-          </button>
+    <div className="min-h-screen bg-white flex flex-col">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex-grow">
+        <header className="py-12">
+          <div className="flex justify-between items-center mb-12">
+            <div></div>
+            <a
+              href="#contact"
+              className="text-gray-700 hover:text-[#FF69B4] transition-colors duration-200 font-inter"
+            >
+              Contact Us
+            </a>
+          </div>
+          <div className="text-center">
+            <h1 className="mb-4 text-5xl md:text-6xl font-bold text-gray-900 font-playfair">
+              Melanin Luxe AI
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-700 font-inter max-w-3xl mx-auto mb-8">
+              Your Personalized Beauty Assistant for African Skin
+            </p>
+            <button className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
+              Start Your Beauty Journey
+            </button>
+          </div>
         </header>
         <div className="flex flex-col md:flex-row items-center gap-12 py-16">
           <div className="md:w-1/2">
@@ -221,6 +231,20 @@ function MainComponent() {
         </div>
       </div>
 
+      <footer className="bg-gray-50 border-t border-gray-200 mt-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <div className="flex justify-center items-center">
+            <a
+              href="mailto:beauty@melaninluxe.ai"
+              className="flex items-center text-gray-700 hover:text-[#FF69B4] transition-colors duration-200 font-inter"
+            >
+              <i className="fas fa-envelope text-2xl mr-2"></i>
+              <span>beauty@melaninluxe.ai</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+
       <style jsx global>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -297,6 +321,7 @@ function MainComponent() {
       `}</style>
     </div>
   );
+
 }
 
 export default MainComponent;
