@@ -26,6 +26,15 @@ jobs:
 
       - name: Build Next.js app
         run: npm run build
+        
+      - name: Export Next.js app
+        run: npm run export || npx next export
+        
+      - name: Ensure favicon exists
+        run: |
+          if [ -f "public/favicon.ico" ] && [ ! -f "out/favicon.ico" ]; then
+            cp public/favicon.ico out/
+          fi
 
       - name: Deploy to Azure Static Web Apps
         uses: azure/static-web-apps-deploy@latest
@@ -36,3 +45,4 @@ jobs:
           app_location: "." # Location of your Next.js project
           api_location: "api" # Location of your API (if you have one)
           output_location: "out" # Location of your Next.js build output
+          skip_app_build: true # Skip the build since we've already built and exported
