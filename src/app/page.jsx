@@ -73,7 +73,6 @@ function MainComponent() {
         <h2 className="text-4xl font-bold text-center text-gray-900 font-playfair mb-12">
           Key Features
         </h2>
-
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 py-16">
           <div className="p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
             <i className="fas fa-microscope text-4xl text-[#FF69B4] mb-4"></i>
@@ -124,40 +123,110 @@ function MainComponent() {
           </div>
         </div>
 
+        <div className="py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#FFF5FA] via-white to-[#FFF0F7] pointer-events-none"></div>
+          <div className="relative max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl font-bold text-gray-900 font-playfair mb-6">
+                LuxeAssist: AI + Expert Skincare, Instantly
+              </h2>
+              <h3 className="text-2xl text-gray-700 font-inter mb-8">
+                AI-Powered Answers & Expert Connections, Anytime
+              </h3>
+              <p className="text-xl text-gray-600 font-inter max-w-3xl mx-auto leading-relaxed">
+                LuxeAssist provides instant, AI-driven answers and connects you
+                to our community of skincare experts. Get personalized guidance,
+                product recommendations, and expert advice, all within the
+                Melanin Luxe app.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <i className="fas fa-robot text-3xl text-[#FF69B4]"></i>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2 font-inter">
+                      24/7 AI Assistance
+                    </h4>
+                    <p className="text-gray-600">
+                      Get instant answers to your skincare questions anytime,
+                      anywhere
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <i className="fas fa-comments text-3xl text-[#FF69B4]"></i>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2 font-inter">
+                      Expert Chat
+                    </h4>
+                    <p className="text-gray-600">
+                      Connect with licensed skincare professionals for
+                      personalized advice
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="relative w-full max-w-[400px] mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[#FF69B4]/20 to-transparent rounded-3xl"></div>
+                  <img
+                    src="/luxe-assist-preview.jpg"
+                    alt="African woman receiving personalized skincare advice through LuxeAssist AI chat interface"
+                    className="w-full h-auto rounded-3xl shadow-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="py-20 bg-gray-50">
           <h2 className="text-4xl font-bold text-center text-gray-900 font-playfair mb-12">
             Professional Solutions
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <i className="fas fa-microscope text-4xl text-[#FF69B4] mb-4"></i>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                For Dermatologists
-              </h3>
-              <p className="text-gray-700 font-inter">
-                Elevate Your Practice with AI-Powered Skin Analysis
-              </p>
-            </div>
-            <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <i className="fas fa-paint-brush text-4xl text-[#FF69B4] mb-4"></i>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                For Makeup Artists
-              </h3>
-              <p className="text-gray-700 font-inter">
-                Achieve Flawless Looks with Precision Shade Matching
-              </p>
-            </div>
-            <div className="p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <i className="fas fa-chart-line text-4xl text-[#FF69B4] mb-4"></i>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                For Skincare Consultants
-              </h3>
-              <p className="text-gray-700 font-inter">
-                Provide Personalized Skincare Guidance with Confidence
-              </p>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-microscope text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  For Dermatologists
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Elevate Your Practice with AI-Powered Skin Analysis
+                </p>
+              </div>
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-paint-brush text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  For Makeup Artists
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Achieve Flawless Looks with Precision Shade Matching
+                </p>
+              </div>
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-chart-line text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  For Skincare Consultants
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Provide Personalized Skincare Guidance with Confidence
+                </p>
+              </div>
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-spa text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  For Estheticians
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Enhance Your Services with AI-Powered Skin Analysis and
+                  Treatment Planning
+                </p>
+              </div>
             </div>
           </div>
-          <p className="text-center text-gray-600 italic text-sm font-inter max-w-3xl mx-auto px-4">
+          <p className="text-center text-gray-600 italic text-sm font-inter max-w-3xl mx-auto px-4 mt-12">
             Note: Melanin Luxe is designed for cosmetic skincare analysis and
             should not replace professional medical advice.
           </p>
@@ -229,6 +298,64 @@ function MainComponent() {
             </div>
           </div>
         </div>
+
+        <div className="py-20 bg-gradient-to-br from-white to-pink-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 font-playfair mb-6">
+                License Our AI Technology
+              </h2>
+              <p className="text-xl text-gray-700 font-inter mb-8">
+                Empower your business with our advanced melanin-focused AI
+                skincare analysis technology
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-brain text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  Proprietary AI Engine
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Access our specialized AI algorithms trained on diverse skin
+                  types and conditions
+                </p>
+              </div>
+
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-code text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  White Label Solution
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Integrate our technology into your existing products and
+                  services under your brand
+                </p>
+              </div>
+
+              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
+                <i className="fas fa-handshake text-4xl text-[#FF69B4] mb-4"></i>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
+                  Partnership Support
+                </h3>
+                <p className="text-gray-700 font-inter">
+                  Dedicated technical support and business integration
+                  consulting
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <button className="bg-gray-900 hover:bg-gray-800 text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
+                Explore Licensing Options
+              </button>
+              <p className="text-gray-600 mt-4 font-inter">
+                Custom solutions available for enterprises and startups
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer className="bg-gray-50 border-t border-gray-200 mt-20">
@@ -274,29 +401,18 @@ function MainComponent() {
                         inset 0 0 15px rgba(255, 105, 180, 0.2);
           }
         }
-      `}</style>
 
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInScale {
+          from { 
+            opacity: 0;
+            transform: scale(0.95) translateY(20px);
+          }
+          to { 
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
         }
-        .grid > div {
-          animation: fadeIn 0.6s ease-out forwards;
-          opacity: 0;
-        }
-        .grid > div:nth-child(1) { animation-delay: 0.1s; }
-        .grid > div:nth-child(2) { animation-delay: 0.2s; }
-        .grid > div:nth-child(3) { animation-delay: 0.3s; }
-        .grid > div:nth-child(4) { animation-delay: 0.4s; }
-        .grid > div:nth-child(5) { animation-delay: 0.5s; }
         
-        @keyframes phoneGlow {
-          0% { box-shadow: 0 0 20px rgba(255, 105, 180, 0.2); }
-          50% { box-shadow: 0 0 30px rgba(255, 105, 180, 0.4); }
-          100% { box-shadow: 0 0 20px rgba(255, 105, 180, 0.2); }
-        }
-
         @keyframes slideInText {
           from { 
             opacity: 0;
@@ -321,7 +437,6 @@ function MainComponent() {
       `}</style>
     </div>
   );
-
 }
 
 export default MainComponent;
