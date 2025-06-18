@@ -3,10 +3,10 @@ name: Deploy Next.js to Azure Static Web Apps
 on:
   push:
     branches:
-      - main # or your production branch
+      - main1 # or your production branch
   pull_request:
     branches:
-      - main # or your production branch
+      - main1 # or your production branch
 
 jobs:
   build_and_deploy:
