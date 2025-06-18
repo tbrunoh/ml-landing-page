@@ -1,6 +1,7 @@
 # Stage 1: Build the Next.js application
 FROM node:18-alpine AS builder
 
+
 WORKDIR /app
 
 COPY package*.json ./
