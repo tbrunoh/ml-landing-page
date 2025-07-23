@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 
-function MainComponent() {
+export default function MainComponent() {
   const [isVisible, setIsVisible] = useState(false);
   const [error, setError] = useState(null);
 
