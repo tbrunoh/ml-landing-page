@@ -1,4 +1,5 @@
 import React from 'react';
+
 function useHandleStreamResponse({
   onChunk,
   onFinish
@@ -25,7 +26,11 @@ function useHandleStreamResponse({
     },
     [onChunk, onFinish]
   );
-  return handleStreamResponse;
+  const handleStreamResponseRef = React.useRef(handleStreamResponse);
+  React.useEffect(() => {
+    handleStreamResponseRef.current = handleStreamResponse;
+  }, [handleStreamResponse]);
+  return React.useCallback((response) => handleStreamResponseRef.current(response), []); 
 }
 
 function useUpload() {
@@ -34,15 +39,36 @@ function useUpload() {
     try {
       setLoading(true);
       let response;
-      if ("file" in input) {
+      if ('reactNativeAsset' in input && input.reactNativeAsset) {
+        if (input.reactNativeAsset.file) {
+          const formData = new FormData();
+          formData.append("file", input.reactNativeAsset.file);
+          response = await fetch("/_create/api/upload/", {
+            method: "POST",
+            body: formData
+          });
+        } else {
+          const response = await fetch("/_create/api/upload/presign/", {
+            method: 'POST',
+          })
+          const { secureSignature, secureExpire } = await response.json();
+          const result = await client.uploadFile(input.reactNativeAsset, {
+            fileName: input.reactNativeAsset.name ?? input.reactNativeAsset.uri.split("/").pop(),
+            contentType: input.reactNativeAsset.mimeType,
+            secureSignature,
+            secureExpire
+          });
+          return { url: `${process.env.EXPO_PUBLIC_BASE_CREATE_USER_CONTENT_URL}/${result.uuid}/`, mimeType: result.mimeType || null };
+        }
+      } else if ("file" in input && input.file) {
         const formData = new FormData();
         formData.append("file", input.file);
-        response = await fetch("/api/upload", {
+        response = await fetch("/_create/api/upload/", {
           method: "POST",
           body: formData
         });
       } else if ("url" in input) {
-        response = await fetch("/api/upload", {
+        response = await fetch("/_create/api/upload/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -50,7 +76,7 @@ function useUpload() {
           body: JSON.stringify({ url: input.url })
         });
       } else if ("base64" in input) {
-        response = await fetch("/api/upload", {
+        response = await fetch("/_create/api/upload/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -58,7 +84,7 @@ function useUpload() {
           body: JSON.stringify({ base64: input.base64 })
         });
       } else {
-        response = await fetch("/api/upload", {
+        response = await fetch("/_create/api/upload/", {
           method: "POST",
           headers: {
             "Content-Type": "application/octet-stream"
@@ -92,6 +118,5 @@ function useUpload() {
 
 export {
   useHandleStreamResponse,
-  useUpload
-};
-
+  useUpload,
+}
