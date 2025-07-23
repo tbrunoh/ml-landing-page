@@ -29,7 +29,7 @@ function MainComponent() {
               Melanin Luxe AI
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 font-inter max-w-3xl mx-auto mb-8">
-              Your Personalized Beauty Assistant for African Skin
+              Your Personalized Beauty Assistant for Melanin Rich Beauty
             </p>
             <button className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
               Start Your Beauty Journey
@@ -43,7 +43,8 @@ function MainComponent() {
             </h2>
             <p className="text-xl text-gray-700 mb-8">
               Experience personalized skincare recommendations powered by
-              advanced AI technology, specially designed for African skin tones.
+              advanced AI technology, specially designed for <em>your</em> skin
+              tone.
             </p>
             <button className="bg-gray-900 hover:bg-gray-800 text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
               Learn More
@@ -61,8 +62,8 @@ function MainComponent() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#FF69B4]/20 to-transparent pointer-events-none z-20"></div>
                 <img
-                  src="/melanin-luxe-app-preview.jpg"
-                  alt="Beautiful African woman using the Melanin Luxe AI app interface showing personalized skincare recommendations"
+                  src="/melanin-luxe-app-preview.webp"
+                  alt="Discover Your Health"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/5"></div>
@@ -171,7 +172,7 @@ function MainComponent() {
                 <div className="relative w-full max-w-[400px] mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#FF69B4]/20 to-transparent rounded-3xl"></div>
                   <img
-                    src="/luxe-assist-preview.jpg"
+                    src="/luxe-assist-preview.webp"
                     alt="African woman receiving personalized skincare advice through LuxeAssist AI chat interface"
                     className="w-full h-auto rounded-3xl shadow-2xl"
                   />
@@ -438,5 +439,3 @@ function MainComponent() {
     </div>
   );
 }
-
-export default MainComponent;
