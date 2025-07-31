@@ -26,10 +26,10 @@ export default function MainComponent() {
           </div>
           <div className="text-center">
             <h1 className="mb-4 text-5xl md:text-6xl font-bold text-gray-900 font-playfair">
-              Melanin Luxe AI
+              Melanin Luxe
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 font-inter max-w-3xl mx-auto mb-8">
-              Your Personalized Beauty Assistant for Melanin Rich Beauty
+              Your Personalized Beauty Assistant, Designed for Your Skin Tone
             </p>
             <button className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
               Start Your Beauty Journey
@@ -63,7 +63,7 @@ export default function MainComponent() {
                 <div className="absolute inset-0 bg-gradient-to-b from-[#FF69B4]/20 to-transparent pointer-events-none z-20"></div>
                 <img
                   src="/melanin-luxe-app-preview.webp"
-                  alt="Discover Your Health"
+                  alt=""
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/5"></div>
@@ -129,14 +129,14 @@ export default function MainComponent() {
           <div className="relative max-w-6xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-5xl font-bold text-gray-900 font-playfair mb-6">
-                LuxeAssist: AI + Expert Skincare, Instantly
+                MELA: AI + Expert Skincare, Instantly
               </h2>
               <h3 className="text-2xl text-gray-700 font-inter mb-8">
                 AI-Powered Answers & Expert Connections, Anytime
               </h3>
               <p className="text-xl text-gray-600 font-inter max-w-3xl mx-auto leading-relaxed">
-                LuxeAssist provides instant, AI-driven answers and connects you
-                to our community of skincare experts. Get personalized guidance,
+                MELA provides instant, AI-driven answers and connects you to our
+                community of skincare experts. Get personalized guidance,
                 product recommendations, and expert advice, all within the
                 Melanin Luxe app.
               </p>
@@ -173,7 +173,7 @@ export default function MainComponent() {
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#FF69B4]/20 to-transparent rounded-3xl"></div>
                   <img
                     src="/luxe-assist-preview.webp"
-                    alt="African woman receiving personalized skincare advice through LuxeAssist AI chat interface"
+                    alt="African woman using MELA app for AI-powered skin analysis"
                     className="w-full h-auto rounded-3xl shadow-2xl"
                   />
                 </div>
@@ -233,8 +233,8 @@ export default function MainComponent() {
           </p>
         </div>
 
-        <div className="py-20">
-          <div className="max-w-6xl mx-auto p-16 rounded-3xl bg-gradient-to-br from-white to-pink-50 border border-gray-100 shadow-xl">
+        <div className="py-20 text-center">
+          <div className="max-w-3xl mx-auto p-16 rounded-3xl bg-gradient-to-br from-white to-pink-50 border border-gray-100 shadow-xl">
             <div
               className="relative"
               style={{ animation: "slideInText 0.8s ease-out forwards" }}
@@ -255,106 +255,25 @@ export default function MainComponent() {
           </div>
         </div>
 
-        <div className="py-20 text-center">
-          <div className="max-w-3xl mx-auto p-12 rounded-3xl bg-white border border-gray-200 shadow-lg">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 font-playfair">
-              Ready to Start Your Beauty Journey?
-            </h2>
-            <p className="text-xl text-gray-700 mb-8">
-              Join thousands of users who have discovered their perfect skincare
-              routine
-            </p>
-            <button className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200 mb-12">
-              Try Melanin Luxe AI Now
-            </button>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-              <a
-                href="#"
-                className="w-[200px] h-[60px] bg-black hover:bg-gray-800 rounded-xl flex items-center justify-center px-4 py-2 transition-all duration-200 hover:scale-105"
-              >
-                <div className="flex items-center">
-                  <i className="fab fa-apple text-white text-3xl mr-3"></i>
-                  <div className="text-left">
-                    <div className="text-white text-xs">Download on the</div>
-                    <div className="text-white text-lg font-semibold">
-                      App Store
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="w-[200px] h-[60px] bg-black hover:bg-gray-800 rounded-xl flex items-center justify-center px-4 py-2 transition-all duration-200 hover:scale-105"
-              >
-                <div className="flex items-center">
-                  <i className="fab fa-google-play text-white text-2xl mr-3"></i>
-                  <div className="text-left">
-                    <div className="text-white text-xs">Get it on</div>
-                    <div className="text-white text-lg font-semibold">
-                      Google Play
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-20 bg-gradient-to-br from-white to-pink-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 font-playfair mb-6">
-                License Our AI Technology
-              </h2>
-              <p className="text-xl text-gray-700 font-inter mb-8">
-                Empower your business with our advanced melanin-focused AI
-                skincare analysis technology
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
-                <i className="fas fa-brain text-4xl text-[#FF69B4] mb-4"></i>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                  Proprietary AI Engine
-                </h3>
-                <p className="text-gray-700 font-inter">
-                  Access our specialized AI algorithms trained on diverse skin
-                  types and conditions
-                </p>
-              </div>
-
-              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
-                <i className="fas fa-code text-4xl text-[#FF69B4] mb-4"></i>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                  White Label Solution
-                </h3>
-                <p className="text-gray-700 font-inter">
-                  Integrate our technology into your existing products and
-                  services under your brand
-                </p>
-              </div>
-
-              <div className="w-full max-w-sm p-8 rounded-2xl bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow text-center">
-                <i className="fas fa-handshake text-4xl text-[#FF69B4] mb-4"></i>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 font-playfair">
-                  Partnership Support
-                </h3>
-                <p className="text-gray-700 font-inter">
-                  Dedicated technical support and business integration
-                  consulting
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <button className="bg-gray-900 hover:bg-gray-800 text-white font-inter px-8 py-4 rounded-md text-lg transition-all duration-200">
-                Explore Licensing Options
-              </button>
-              <p className="text-gray-600 mt-4 font-inter">
-                Custom solutions available for enterprises and startups
-              </p>
-            </div>
+        <div className="py-16 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 font-playfair mb-8">
+            Download the Melanin Luxe App
+          </h2>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <a href="#" className="transition-transform hover:scale-105">
+              <img
+                src="/gplay.avif"
+                alt="Get it on Google Play"
+                className="h-16 w-auto"
+              />
+            </a>
+            <a href="#" className="transition-transform hover:scale-105">
+              <img
+                src="/ios.avif"
+                alt="Download on the App Store"
+                className="h-16 w-auto"
+              />
+            </a>
           </div>
         </div>
       </div>
