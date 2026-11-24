@@ -3,8 +3,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Melanin Luxe",
-  description: "Melanin Luxe Beauty App",
+  title: "Inclusive Skin AI",
+  description: "AI skincare built for melanin-rich skin",
 };
 
 export default function RootLayout({ children }) {

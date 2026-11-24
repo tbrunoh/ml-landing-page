@@ -13,27 +13,26 @@ export default function MainComponent() {
       {/* SEO Meta Tags */}
       <head>
         <title>
-          Melanin Luxe - AI-Powered Skincare for Melanin-Rich Skin |
+          Inclusive Skin AI - AI-Powered Skincare for Melanin-Rich Skin |
           Personalized Beauty Assistant
         </title>
         <meta
           name="description"
-          content="Transform your skincare routine with Melanin Luxe's AI-powered beauty assistant. Get personalized recommendations, virtual try-on, and expert advice designed specifically for melanin-rich skin tones."
+          content="Transform your skincare routine with Inclusive Skin AI's AI-powered beauty assistant. Get personalized recommendations, virtual try-on, and expert advice designed specifically for melanin-rich skin tones."
         />
         <meta
           name="keywords"
-          content="melanin luxe, AI skincare, melanin-rich skin, personalized beauty, virtual try-on, skin analysis, MELA AI, skincare app, beauty assistant, dermatology"
+          content="inclusive skin ai, AI skincare, melanin-rich skin, personalized beauty, virtual try-on, skin analysis, MELA AI, skincare app, beauty assistant, dermatology"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Melanin Luxe" />
+        <meta name="author" content="Inclusive Skin AI" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://melaninluxe.ai/" />
         <meta
           property="og:title"
-          content="Melanin Luxe - AI-Powered Skincare for Melanin-Rich Skin"
+          content="Inclusive Skin AI - AI-Powered Skincare for Melanin-Rich Skin"
         />
         <meta
           property="og:description"
@@ -46,10 +45,9 @@ export default function MainComponent() {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://melaninluxe.ai/" />
         <meta
           property="twitter:title"
-          content="Melanin Luxe - AI-Powered Skincare for Melanin-Rich Skin"
+          content="Inclusive Skin AI - AI-Powered Skincare for Melanin-Rich Skin"
         />
         <meta
           property="twitter:description"
@@ -65,20 +63,14 @@ export default function MainComponent() {
           {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "Melanin Luxe",
+            "name": "Inclusive Skin AI",
             "description": "AI-powered skincare assistant designed for melanin-rich skin",
-            "url": "https://melaninluxe.ai",
             "applicationCategory": "HealthApplication",
             "operatingSystem": "iOS, Android",
             "offers": {
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "1250"
             }
           }
         `}</script>
@@ -108,17 +100,10 @@ export default function MainComponent() {
           <header className="py-16">
             <div className="flex justify-between items-center mb-16">
               <div></div>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-[#FF69B4] transition-all duration-300 font-inter font-medium tracking-wide text-sm uppercase"
-                aria-label="Contact Melanin Luxe"
-              >
-                Contact Us
-              </a>
             </div>
             <div className="text-center">
               <h1 className="mb-6 text-6xl md:text-7xl font-bold text-gray-900 font-playfair tracking-tight leading-none">
-                Melanin Luxe
+                Inclusive Skin AI
               </h1>
               <div
                 className="w-24 h-1 bg-gradient-to-r from-[#FF69B4] to-[#FF1493] mx-auto mb-8"
@@ -129,7 +114,7 @@ export default function MainComponent() {
               </p>
               <button
                 className="bg-gradient-to-r from-[#FF69B4] to-[#FF1493] hover:from-[#FF1493] hover:to-[#DC143C] text-white font-inter px-12 py-5 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 font-medium tracking-wide mb-8"
-                aria-label="Start your personalized beauty journey with Melanin Luxe"
+                aria-label="Start your personalized beauty journey with Inclusive Skin AI"
               >
                 Start Your Beauty Journey
               </button>
@@ -137,7 +122,7 @@ export default function MainComponent() {
                 <a
                   href="#"
                   className="transition-all duration-300 hover:scale-105 transform hover:-translate-y-1 shadow-lg hover:shadow-xl rounded-2xl overflow-hidden"
-                  aria-label="Download Melanin Luxe on Google Play Store"
+                  aria-label="Download Inclusive Skin AI on Google Play Store"
                 >
                   <img
                     src="https://ucarecdn.com/67dec217-0090-43ed-9582-b538519f5753/-/format/auto/"
@@ -151,7 +136,7 @@ export default function MainComponent() {
                 <a
                   href="#"
                   className="transition-all duration-300 hover:scale-105 transform hover:-translate-y-1 shadow-lg hover:shadow-xl rounded-2xl overflow-hidden"
-                  aria-label="Download Melanin Luxe on App Store"
+                  aria-label="Download Inclusive Skin AI on App Store"
                 >
                   <img
                     src="https://ucarecdn.com/15b61d93-81b8-4283-9fac-6c06ab31da22/-/format/auto/"
@@ -189,7 +174,7 @@ export default function MainComponent() {
               </p>
               <button
                 className="bg-gray-900 hover:bg-gray-800 text-white font-inter px-10 py-5 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 font-medium tracking-wide"
-                aria-label="Learn more about Melanin Luxe AI technology"
+                aria-label="Learn more about Inclusive Skin AI AI technology"
               >
                 Learn More
               </button>
@@ -203,7 +188,7 @@ export default function MainComponent() {
                   </div>
                   <img
                     src="https://ucarecdn.com/9fe0a9d3-ab1d-4c4e-b82c-dc04982c4694/-/format/auto/"
-                    alt="Melanin Luxe app interface showing AI-powered skin analysis"
+                    alt="Inclusive Skin AI app interface showing AI-powered skin analysis"
                     className="w-full h-full object-cover"
                     loading="lazy"
                     width="300"
@@ -329,7 +314,7 @@ export default function MainComponent() {
                   MELA provides instant, AI-driven answers and connects you to
                   our community of skincare experts. Get personalized guidance,
                   product recommendations, and expert advice, all within the
-                  Melanin Luxe app.
+                  Inclusive Skin AI app.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -463,7 +448,7 @@ export default function MainComponent() {
               </div>
             </div>
             <p className="text-center text-gray-500 italic text-sm font-inter max-w-3xl mx-auto px-4 mt-16 font-light">
-              Note: Melanin Luxe is designed for cosmetic skincare analysis and
+              Note: Inclusive Skin AI is designed for cosmetic skincare analysis and
               should not replace professional medical advice.
             </p>
           </section>
@@ -486,7 +471,7 @@ export default function MainComponent() {
                   role="presentation"
                 ></div>
                 <p className="text-xl text-gray-600 font-inter leading-relaxed max-w-4xl font-light">
-                  Melanin Luxe is the AI-powered skincare app designed to
+                  Inclusive Skin AI is the AI-powered skincare app designed to
                   empower you on your journey to healthy, glowing skin. We
                   understand that skincare isn't one-size-fits-all, especially
                   when it comes to the unique needs of melanin-rich skin. That's
@@ -499,28 +484,11 @@ export default function MainComponent() {
           </section>
 
           {/* Footer */}
-          <footer
-            id="contact"
-            className="bg-gradient-to-r from-gray-50 via-white to-gray-50 border-t border-gray-100 mt-24 shadow-inner"
-          >
+          <footer className="bg-gradient-to-r from-gray-50 via-white to-gray-50 border-t border-gray-100 mt-24 shadow-inner">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-              <div className="flex justify-center items-center">
-                <a
-                  href="mailto:beauty@melaninluxe.ai"
-                  className="flex items-center text-gray-700 hover:text-[#FF69B4] transition-all duration-300 font-inter font-medium group"
-                  aria-label="Contact Melanin Luxe via email"
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FF69B4] to-[#FF1493] rounded-xl flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                    <i
-                      className="fas fa-envelope text-xl text-white"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                  <span className="text-lg tracking-wide">
-                    beauty@melaninluxe.ai
-                  </span>
-                </a>
-              </div>
+              <p className="text-center text-gray-500 font-inter text-sm tracking-wide">
+                Inclusive Skin AI
+              </p>
             </div>
           </footer>
 
